@@ -5,13 +5,17 @@
 
 ### Step 1: Clone the repository, install dependencies
 
-    $ git clone https://github.com/dopkg/dopkg-example-app.git
-    $ cd dopkg-example-app
-    $ npm install
+```bash
+$ git clone https://github.com/dopkg/dopkg-example-app.git
+$ cd dopkg-example-app
+$ npm install
+```
 
 ### Step 2: Run the build command
 
-    $ npm run build
+```bash
+$ npm run build
+```
 
 This will do 2 things:
 
