@@ -1,0 +1,29 @@
+{
+  "name": "dopkg-example-app",
+  "version": "1.0.0",
+  "description": "",
+  "bin": "index.js",
+  "scripts": {
+    "prebuild": "dopkg",
+    "build": "docker build -t dopkg/dopkg-example-app:latest .",
+    "start": "docker run -p 3000:3000 -it --name dopkg-example-app --rm dopkg/dopkg-example-app:latest",
+    "stop": "docker stop dopkg-example-app"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dopkg/dopkg-example-app.git"
+  },
+  "author": "Yuan Tao <towyuan@outlook.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/dopkg/dopkg-example-app/issues"
+  },
+  "homepage": "https://github.com/dopkg/dopkg-example-app#readme",
+  "dependencies": {
+    "micro": "^9.3.3"
+  },
+  "devDependencies": {
+    "@types/micro": "^7.3.3",
+    "dopkg": "^1.0.0"
+  }
+}
